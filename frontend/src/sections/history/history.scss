@@ -1,0 +1,26 @@
+#history {
+    margin-top: 80px;
+    padding: 80px;
+    height: max(100vh, auto);
+    text-align: center;
+    width: 100%;
+}
+
+.history-title {
+    padding-bottom: 50px;
+}
+
+.year-1990 {
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.year-description {
+    width: 75%;
+}
+
+.extra-text {
+    margin-top: 120px;
+}

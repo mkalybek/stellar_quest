@@ -1,5 +1,19 @@
 @import "styles/fonts.scss";
 
 .App {
-  text-align: center;
+  text-align: left;
+  color: white;
+}
+
+.title {
+  font-family: 'Anton', sans-serif;
+  font-size: 72px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 19px;
+  font-weight: 400;
 }

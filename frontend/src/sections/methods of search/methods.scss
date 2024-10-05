@@ -1,19 +1,37 @@
-.header {
-    position: fixed;
-    background-color: rgb(0, 0, 0, 0.2);
-    color: #fff;
-    padding: 20px;
+#methods {
+    padding: 80px;
+    height: max(100vh, auto);
     width: 100%;
+}
+
+.methods-content {
     display: flex;
-    flex-direction: row;
-    justify-content: end;
+    align-items: center;
+}
 
+.methods-title {
+    padding-bottom: 50px;
+}
 
-    .logo {
-        font-size: 24px;
-        font-weight: bold;
-    }
+.methods-images {
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
 
+.methods-image {
+    width: 200px;
+    height: 200px; 
+    margin: 20px;
+    border-radius: 50%;
+}
+
+.methods-text {
+    width: 50%;
+    transform: translateY(-80px);
+}
+
+.methods-list {
     ul {
         list-style: none;
         padding: 0;
@@ -22,7 +40,7 @@
         margin-right: 50px;
 
         li {
-            display: inline;
+
             margin: 0 15px;
             text-decoration: none;
 

@@ -1,0 +1,22 @@
+.method-description {
+    display: flex;
+    justify-content:space-evenly;
+    height: 100vh;
+    margin-bottom: 40px;
+}
+
+.left-side {
+    width: 50%;
+}
+
+.right-side {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.method-description-image {
+    width: 50%;
+    height: 100%;
+}
