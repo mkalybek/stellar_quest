@@ -12,8 +12,8 @@
             flex-direction: column;
             align-items: center;
             .circle_container {
-                width: 380px;                 /* Width of the circular container */
-                height: 380px;                /* Height of the circular container */
+                width: 360px;                 /* Width of the circular container */
+                height: 360px;                /* Height of the circular container */
                 border-radius: 50%;           /* Makes the container circular */
                 overflow: hidden;             /* Hides the parts of the image that overflow */
                 border: 5px solid #4d9de0;   /* Optional: circular outline */
@@ -30,7 +30,7 @@
             .link_closer {
                 display: inline-block;                          /* Make it an inline-block for padding */
                 background-color: #1f1f1f;                     /* Dark background for space theme */
-                margin-top: 20px;
+                margin-top: 30px;
                 color: #ffffff;                                 /* White text for contrast */
                 font-size: 18px;                               /* Font size */
                 font-family: "Josefin Sans", sans-serif;       /* Font family */
