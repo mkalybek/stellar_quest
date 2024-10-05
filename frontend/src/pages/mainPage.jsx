@@ -1,4 +1,5 @@
-import './../App.scss';
+import './page.scss';
+
 import Header from './../components/header/header';
 import Exomoons from './../sections/exomoons/exomoons';
 import History from './../sections/history/history.jsx';
@@ -9,18 +10,21 @@ import Exoplanets from './../sections/exoplanets/exoplanets';
 import Simulator from './../sections/simulator/simulator';
 
 const MainPage = () => {
-  return (
-    <div>
-      <Header />
-      <Start />
-      <History />
-      <Methods />
-      <Types />
-      <Exoplanets />
-      <Simulator />
-      <Exomoons />
-    </div>
-  );
-}
+    return (
+        <div className='page'>
+            <div class='stars'></div>
+            <div class='twinkling'></div>
+            <div class='clouds'></div>
+            <Header />
+            <Start />
+            <History />
+            <Methods />
+            <Types />
+            <Exoplanets />
+            <Simulator />
+            <Exomoons />
+        </div>
+    );
+};
 
 export default MainPage;

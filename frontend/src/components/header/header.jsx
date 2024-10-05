@@ -7,8 +7,8 @@ const Header = () => {
                 <li><a href="/#history">HISTORY</a></li>
                 <li><a href="/#methods">METHODS OF SEARCH</a></li>
                 <li><a href="/#types">TYPES AND CLASSES</a></li>
-                <li><a href="/#">EXOPLANETS</a></li>
-                <li><a href="/#">SIMULATOR</a></li>
+                <li><a href="/#exoplanets">EXOPLANETS</a></li>
+                <li><a href="/#simulator">SIMULATOR</a></li>
                 <li><a href="/#">MAPS</a></li>
                 <li><a href="/#exomoons">EXOMOONS</a></li>
                 <li><a href="/#">EXPLORE</a></li>

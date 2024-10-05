@@ -1,0 +1,160 @@
+@import "./../styles/fonts.scss";
+
+.page {
+  text-align: left;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.title {
+  font-family: 'Anton', sans-serif;
+  font-size: 72px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.page_simulator {
+    .wrap {
+        padding: 125px 0 0 0;
+    }
+    text-align: center;
+    .planet-form {
+        background-color: #1f1f1f; /* Dark background for space theme */
+        border: 2px solid #ffffff; /* Border similar to button */
+        border-radius: 20px;       /* Rounded corners */
+        padding: 30px;
+        width: 100%;
+        max-width: 600px;
+        margin: 20px auto;
+        box-shadow: 0 0 15px rgba(77, 157, 224, 0.4); /* Subtle glow effect */
+        transition: all 0.3s ease-in-out;
+    
+        .form-group {
+            margin-bottom: 20px;
+            text-align: center;
+    
+            label {
+                display: block;
+                font-size: 18px;
+                color: #ffffff; /* White text for contrast */
+                font-family: "Josefin Sans", sans-serif;
+                margin-bottom: 10px;
+                letter-spacing: 1.5px;
+            }
+    
+            input[type="range"] {
+                width: 100%;
+                height: 6px;
+                border-radius: 5px;
+                background: #4d9de0; /* Blue for the range slider track */
+                outline: none;
+                transition: 0.3s ease-in-out;
+            }
+    
+            input[type="range"]::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                appearance: none;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background: #ffffff; /* White thumb for contrast */
+                cursor: pointer;
+                box-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+                transition: box-shadow 0.2s ease-in-out;
+            }
+    
+            input[type="range"]::-moz-range-thumb {
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background: #ffffff;
+                cursor: pointer;
+            }
+    
+            input[type="range"]:hover::-webkit-slider-thumb {
+                box-shadow: 0 0 10px #4d9de0; /* Glow effect on hover */
+            }
+    
+            input[type="number"] {
+                width: 60px;
+                padding: 5px;
+                border-radius: 10px;
+                border: 1px solid #4d9de0;
+                background-color: #2c2c2c; /* Dark input background */
+                color: #ffffff; /* White text */
+                text-align: center;
+                font-size: 16px;
+                outline: none;
+                transition: all 0.3s ease-in-out;
+            }
+    
+            input[type="number"]:focus {
+                border-color: #ffffff; /* White border on focus */
+                box-shadow: 0 0 10px rgba(77, 157, 224, 0.5); /* Subtle glow */
+            }
+        }
+    
+        &:hover {
+            box-shadow: 0 0 60px rgba(77, 157, 224, 0.6); /* Glowing effect on hover */
+            border-color: #4d9de0;
+        }
+
+        .generate-btn {
+            background-color: #1f1f1f; /* Dark background for space theme */
+            color: #ffffff; /* White text for contrast */
+            font-size: 18px;
+            padding: 15px 30px;
+            border: 2px solid #4d9de0; /* Border color like a spacey blue */
+            border-radius: 50px; /* Rounded edges */
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .generate-btn::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(77, 157, 224, 0.4), transparent);
+            transition: all 0.5s ease-in-out;
+            transform: rotate(45deg);
+        }
+        
+        .generate-btn:hover::before {
+            top: -70%;
+            left: -70%;
+            background: radial-gradient(circle, rgba(77, 157, 224, 0.6), transparent);
+        }
+        
+        .generate-btn:hover {
+            color: #4d9de0; /* Change text color on hover */
+            border-color: #ffffff; /* Change border color on hover */
+            box-shadow: 0 0 20px rgba(77, 157, 224, 0.6), 0 0 30px rgba(77, 157, 224, 0.4); /* Glowing effect */
+        }
+        
+        .generate-btn:active {
+            box-shadow: 0 0 10px rgba(77, 157, 224, 0.4), 0 0 15px rgba(77, 157, 224, 0.2); /* Reduced glow on click */
+            transform: scale(0.95); /* Slight button press effect */
+        }
+    }
+    
+}
