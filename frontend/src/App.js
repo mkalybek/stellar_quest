@@ -1,11 +1,10 @@
 import './App.scss';
+import Header from './components/header/header';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        Stellar quest
-      </header>
+      <Header />
     </div>
   );
 }
