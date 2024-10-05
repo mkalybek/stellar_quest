@@ -1,0 +1,24 @@
+#simulator {
+    height: 75vh;
+    padding: 25px 75px;
+
+    .text {
+        padding-bottom: 80px;
+    }
+    .choices {
+        display: flex;
+        justify-content: space-between;
+        font-size: 3.5rem;
+
+        a {
+            padding: 0 100px;
+            color: #ffffff;                                /* Start with white text */
+            text-decoration: none;                          /* Remove underline */
+            position: relative;                             /* For positioning the glow effect */
+            transition: color 0.3s ease; 
+            &:hover {
+                color: #4d9de0;                                /* Change text color to blue on hover */
+            }
+        }
+    }
+}

@@ -5,6 +5,8 @@ import History from './sections/history/history.jsx';
 import Methods from './sections/methods of search/methods.jsx';
 import Start from './sections/start/start.jsx';
 import Types from './sections/types and classes/types.jsx';
+import Exoplanets from './sections/exoplanets/exoplanets';
+import Simulator from './sections/simulator/simulator';
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
       <History />
       <Methods />
       <Types />
+      <Exoplanets />
+      <Simulator />
       <Exomoons />
     </div>
   );

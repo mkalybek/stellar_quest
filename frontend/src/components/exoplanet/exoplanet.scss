@@ -1,0 +1,145 @@
+#exoplanets {
+    padding: 100px 0 100px 0;
+    .wrap {
+        width: 100vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 600px;
+        
+        .img_col {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .circle_container {
+                width: 380px;                 /* Width of the circular container */
+                height: 380px;                /* Height of the circular container */
+                border-radius: 50%;           /* Makes the container circular */
+                overflow: hidden;             /* Hides the parts of the image that overflow */
+                border: 5px solid #4d9de0;   /* Optional: circular outline */
+                display: flex;                /* Centering the image */
+                justify-content: center;      /* Centering horizontally */
+                align-items: center;          /* Centering vertically */
+
+                .img {
+                    width: 100%;                  /* Makes the image fill the container */
+                    height: 100%;                 /* Maintains aspect ratio */
+                    object-fit: cover;            /* Ensures the image covers the area while maintaining its aspect ratio */
+                }
+            }
+            .link_closer {
+                display: inline-block;                          /* Make it an inline-block for padding */
+                background-color: #1f1f1f;                     /* Dark background for space theme */
+                margin-top: 20px;
+                color: #ffffff;                                 /* White text for contrast */
+                font-size: 18px;                               /* Font size */
+                font-family: "Josefin Sans", sans-serif;       /* Font family */
+                padding: 10px 30px;                            /* Padding */
+                border: 2px solid #4d9de0;                     /* Border color */
+                border-radius: 50px;                           /* Rounded edges */
+                text-transform: uppercase;                      /* Uppercase text */
+                letter-spacing: 2px;                           /* Letter spacing */
+                cursor: pointer;                                /* Pointer cursor */
+                position: relative;                             /* Position relative for ::before */
+                overflow: hidden;                               /* Hide overflow */
+                text-decoration: none;                          /* Remove underline */
+                transition: all 0.3s ease-in-out;              /* Transition effects */
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: -50%;
+                    left: -50%;
+                    width: 200%;
+                    height: 200%;
+                    background: radial-gradient(circle, rgba(77,157,224,0.4), transparent); /* Background gradient */
+                    transition: all 0.5s ease-in-out;               /* Transition effects */
+                    transform: rotate(45deg);
+                }
+                
+                &:hover::before {
+                    top: -70%;
+                    left: -70%;
+                    background: radial-gradient(circle, rgba(77,157,224,0.6), transparent); /* Change background on hover */
+                }
+                
+                &:hover {
+                    color: #4d9de0;                                /* Change text color on hover */
+                    border-color: #ffffff;                         /* Change border color on hover */
+                    box-shadow: 0 0 20px rgba(77, 157, 224, 0.6), 0 0 30px rgba(77, 157, 224, 0.4); /* Glowing effect */
+                }
+                
+                &:active {
+                    box-shadow: 0 0 10px rgba(77, 157, 224, 0.4), 0 0 15px rgba(77, 157, 224, 0.2); /* Reduced glow on click */
+                    transform: scale(0.95);                       /* Slight press effect */
+                }
+                
+                span {
+                    color: rgba(77,157,224);                       /* Span color to match button */
+                }
+            }
+        }
+        .info {
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+            .title {
+                color: white;
+                text-transform: uppercase;
+                font-size: 4.5rem;
+            }
+            .desc {
+                padding-bottom: 30px;
+            }
+            .button_talk {
+                background-color: #1f1f1f;  /* Dark background for space theme */
+                color: #ffffff;  /* White text for contrast */
+                font-size: 18px;
+                font-family: "Josefin Sans", sans-serif;
+                padding: 15px 30px;
+                border: 2px solid #4d9de0;  /* Border color like a spacey blue */
+                border-radius: 50px;  /* Rounded edges for smooth, futuristic look */
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                cursor: pointer;
+                position: relative;
+                overflow: hidden;
+                transition: all 0.3s ease-in-out;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: -50%;
+                    left: -50%;
+                    width: 200%;
+                    height: 200%;
+                    background: radial-gradient(circle, rgba(77,157,224,0.4), transparent);
+                    transition: all 0.5s ease-in-out;
+                    transform: rotate(45deg);
+                }
+                &:hover::before {
+                    top: -70%;
+                    left: -70%;
+                    background: radial-gradient(circle, rgba(77,157,224,0.6), transparent);
+                }
+                &:hover {
+                    color: #4d9de0;  /* Change text color on hover */
+                    border-color: #ffffff;  /* Change border color on hover */
+                    box-shadow: 0 0 20px rgba(77, 157, 224, 0.6), 0 0 30px rgba(77, 157, 224, 0.4);  /* Glowing effect */
+                }
+                &:active {
+                    box-shadow: 0 0 10px rgba(77, 157, 224, 0.4), 0 0 15px rgba(77, 157, 224, 0.2);  /* Reduced glow on click */
+                    transform: scale(0.95);  /* Slight button press effect */
+                }
+
+                span {
+                    color: rgba(77,157,224);
+                }
+            }
+            
+            
+        }
+
+        
+    }
+}
