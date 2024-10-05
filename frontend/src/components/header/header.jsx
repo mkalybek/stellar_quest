@@ -4,14 +4,14 @@ const Header = () => {
     return (
         <header className='header anton-regular'>
             <ul>
-                <li><a>HISTORY</a></li>
-                <li><a>METHODS OF SEARCH</a></li>
-                <li><a>TYPES AND CLASSES</a></li>
-                <li><a>EXOPLANETS</a></li>
-                <li><a>SIMULATOR</a></li>
-                <li><a>MAPS</a></li>
-                <li><a>EXOMOONS</a></li>
-                <li><a>EXPLORE</a></li>
+                <li><a href="/#">HISTORY</a></li>
+                <li><a href="/#">METHODS OF SEARCH</a></li>
+                <li><a href="/#">TYPES AND CLASSES</a></li>
+                <li><a href="/#">EXOPLANETS</a></li>
+                <li><a href="/#">SIMULATOR</a></li>
+                <li><a href="/#">MAPS</a></li>
+                <li><a href="/#">EXOMOONS</a></li>
+                <li><a href="/#">EXPLORE</a></li>
             </ul>
         </header>
     );
