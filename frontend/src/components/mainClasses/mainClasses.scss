@@ -1,0 +1,36 @@
+.main-class {
+    text-align: center;
+    width: 100%;
+    background-color: rgb(23, 51, 42);
+    border-radius: 20px;
+}
+
+.main-class-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main-class-title {
+    font-size: larger;
+    font-weight: bolder;
+    padding: 20px;
+}
+
+.main-class-description {
+    text-align: left;
+    align-items: start;
+}
+
+.main-class-image {
+    transform: translateX(50%);
+}
+
+.main-class-actual-image {
+    height: 175px;
+    width: 175px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 8px solid white;
+    box-shadow: 0 0 0 4px rgb(50, 50, 131); 
+    margin-bottom: 10px;
+}

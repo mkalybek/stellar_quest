@@ -40,8 +40,8 @@
 }
 
 .main-type-image {
-    height: 175px;
-    width: 175px;
+    height: 225px;
+    width: 225px;
     border: 1px  ;
     object-fit: cover;
     border-radius: 50%;
@@ -58,6 +58,14 @@
 
 .main-type-description {
     font-size: 15px;
-    margin: 0 50px;
+    margin: 0 40px;
     padding-bottom: 20px;
+}
+
+.main-classes {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 60px;
 }
