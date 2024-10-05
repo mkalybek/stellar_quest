@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "incremental": true,                  
+    "target": "es2019",
+    "module": "commonjs",                 
+    "allowJs": true,                      
+    "checkJs": true,                      
+    "outDir": "./built",
+    "removeComments": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,          
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": false,
+    "noImplicitThis": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "resolveJsonModule": true
+  },
+  "exclude": [
+      "./**/*.js"
+  ]
+}
