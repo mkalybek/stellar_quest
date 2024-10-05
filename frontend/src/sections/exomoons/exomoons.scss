@@ -9,5 +9,64 @@
 }
 
 .exomoons-text {
-    width: 75%;
+    width: 65%;
 }
+
+.first-description {
+    justify-content: space-evenly;
+    height: 100vh;
+    margin-bottom: 40px;
+}
+
+.goldilocks {
+    height: 100vh;
+    display: flex;
+    margin-left: 40px;
+    justify-content: space-between;
+}
+
+.goldilocks-description {
+    width: 40%;
+    text-align: left;
+}
+
+.goldilocks-image {
+    width: 50%;
+    transform: translateY(140px);
+}
+
+.goldilocks-image-actual {
+    width: 225px;
+    height: 225px;
+    background-size: contain;
+    margin-right: 30px;
+    border-radius: 7%;
+    border: 3px solid white;
+    margin-bottom: 60px;
+}
+
+.goldilocks-image-text {
+    margin-top: 60px;
+}
+
+.examples {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.example {
+    width: 20%;
+    text-align: center;
+    margin-left: 40px;
+}
+
+.ending {
+    margin-top: 20%;
+    text-align: center;
+    padding: 0 20%;
+}
+
+.end {
+    padding-bottom: 10%;
+}
+

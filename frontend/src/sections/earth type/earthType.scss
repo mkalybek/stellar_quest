@@ -1,0 +1,44 @@
+#earth-type {
+    padding: 80px;
+    height: max(100vh, auto);
+    width: 100%;
+}
+
+.earth-type-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 100px;
+    padding: 20px;
+}
+
+.earth-type-title {
+    text-align: center;
+    width: 100%;
+}
+
+.earth-type-card {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+}
+
+.earth-type-card-image-box {
+    width: 100%;
+}
+
+.earth-type-card-image {
+    width: 90%;
+    border-radius: 23px;
+    border: 1px solid white;
+}
+
+.earth-type-card-title {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.earth-type-card-container {
+    width: 50%;
+    align-items: center;
+}

@@ -4,6 +4,10 @@
     width: 100%;
 }
 
+#dopler {
+    margin-top: 80px;
+}
+
 .methods-content {
     display: flex;
     align-items: center;
@@ -14,20 +18,22 @@
 }
 
 .methods-images {
-    width: 50%;
+    width: 100%;
     justify-content: center;
     align-items: center;
 }
 
 .methods-image {
-    width: 200px;
-    height: 200px; 
+    width: 230px;
+    height: 230px; 
     margin: 20px;
     border-radius: 50%;
+    border: 8px solid white;
+    box-shadow: 0 0 0 4px rgb(50, 50, 131); 
 }
 
 .methods-text {
-    width: 50%;
+    width: 60%;
     transform: translateY(-80px);
 }
 

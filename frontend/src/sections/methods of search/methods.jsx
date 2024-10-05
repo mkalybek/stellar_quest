@@ -1,5 +1,13 @@
 import "./methods.scss";
 import "./method-descrs.scss";
+import image1 from "./../../assets/exoplanets/methods-image1.webp";
+import image2 from "./../../assets/exoplanets/exosky.webp";
+import Dopler from "./../../assets/ways_to_find_a_planet/radial_velocity.mp4";
+import Transit from "./../../assets/ways_to_find_a_planet/transit_method_double_planet.mp4";
+import Grav from "./../../assets/ways_to_find_a_planet/gravitational_microlensing.mp4";
+import DirI from "./../../assets/ways_to_find_a_planet/direct-imaging.mp4";
+import Movem from "./../../assets/ways_to_find_a_planet/astometry.mp4";
+
 
 const Methods = () => {
   return (
@@ -9,16 +17,8 @@ const Methods = () => {
       </div>
       <div className="methods-content">
         <div className="methods-images">
-          <img
-            src="https://community.softr.io/uploads/db9110/original/2X/7/74e6e7e382d0ff5d7773ca9a87e6f6f8817a68a6.jpeg"
-            alt="Kepler-186f"
-            className="methods-image"
-          />
-          <img
-            src="https://community.softr.io/uploads/db9110/original/2X/7/74e6e7e382d0ff5d7773ca9a87e6f6f8817a68a6.jpeg"
-            alt="Space"
-            className="methods-image"
-          />
+          <img src={image1} alt="Kepler-186f" className="methods-image" />
+          <img src={image2} alt="Space" className="methods-image" />
         </div>
         <div className="text methods-text">
           Люди давно начали думать, как можно открыть планеты у других звезд.
@@ -58,7 +58,13 @@ const Methods = () => {
       </div>
       <div id="dopler" className="method-description">
         <div className="left-side">
-            <img src="" alt="" className="method-description-image"/>
+          <video className="method-description-image" autoplay="on" loop muted preload="auto">
+            <source
+              src={Dopler}
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
         </div>
         <div className="right-side">
           <div className="title right-side-title">DOPLER'S EFFECT</div>
@@ -83,7 +89,13 @@ const Methods = () => {
       </div>
       <div id="transit" className="method-description">
         <div className="left-side">
-            <img src="" alt="" className="method-description-image"/>
+          <video className="method-description-image" autoplay="on" loop muted preload="auto">
+            <source
+              src={Transit}
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
         </div>
         <div className="right-side">
           <div className="title">TRANSIT</div>
@@ -110,7 +122,13 @@ const Methods = () => {
       </div>
       <div id="microlensing" className="method-description">
         <div className="left-side">
-            <img src="" alt="" className="method-description-image"/>
+        <video className="method-description-image" autoplay="on" loop muted preload="auto">
+            <source
+              src={Grav}
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
         </div>
         <div className="right-side">
           <div className="title">GRAVITATIONAL MICROLENSING</div>
@@ -134,7 +152,13 @@ const Methods = () => {
       </div>
       <div id="direct-imaging" className="method-description">
         <div className="left-side">
-            <img src="" alt="" className="method-description-image"/>
+        <video className="method-description-image" autoplay="on" loop muted preload="auto">
+            <source
+              src={DirI}
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
         </div>
         <div className="right-side">
           <div className="title">DIRECT IMAGING</div>
@@ -150,7 +174,13 @@ const Methods = () => {
       </div>
       <div id="minuscule" className="method-description">
         <div className="left-side">
-            <img src="" alt="" className="method-description-image"/>
+        <video className="method-description-image" autoplay="on" loop muted preload="auto">
+            <source
+              src={Movem}
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
         </div>
         <div className="right-side">
           <div className="title">MINUSCULE MOVEMENTS</div>

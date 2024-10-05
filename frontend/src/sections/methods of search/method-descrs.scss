@@ -5,8 +5,13 @@
     margin-bottom: 40px;
 }
 
+.methods-content {
+    margin-bottom: 250px;
+}
+
 .left-side {
-    width: 50%;
+    width: 45%;
+    // border-radius: 20px;
 }
 
 .right-side {
@@ -17,6 +22,7 @@
 }
 
 .method-description-image {
-    width: 50%;
-    height: 100%;
+    width: 100%;
+    border: white 1px solid;
+
 }
