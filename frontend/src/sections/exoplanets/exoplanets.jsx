@@ -1,3 +1,4 @@
+import './exoplanets.scss';
 import kelt9bImage from './../../assets/exoplanets/kelt-9b.webp';
 import hd189733bImage from './../../assets/exoplanets/hd_189733_b.png';
 import psrJ17191438bImage from './../../assets/exoplanets/gasgiant-7.jpg.webp';
@@ -10,6 +11,9 @@ import Exoplanet from '../../components/exoplanet/exoplanet';
 const Exoplanets = () => {
     return (
         <section id="exoplanets" className="section_exoplanets">
+            <div className='section_exoplanets_title'>
+                <div className='title'>EXOPLANETS</div>
+            </div>
            <Exoplanet 
                 name="Kelt-9b" 
                 desc='This is the hottest known exoplanet, a hot Jupiter'

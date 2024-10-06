@@ -8,6 +8,8 @@ import Start from './../sections/start/start.jsx';
 import Types from './../sections/types and classes/types.jsx';
 import Exoplanets from './../sections/exoplanets/exoplanets';
 import Simulator from './../sections/simulator/simulator';
+import EarthType from '../sections/earth type/earthType.jsx';
+import Maps from './../sections/maps/maps.jsx';
 
 const MainPage = () => {
     return (
@@ -20,8 +22,10 @@ const MainPage = () => {
             <History />
             <Methods />
             <Types />
+            <EarthType />
             <Exoplanets />
             <Simulator />
+            <Maps />
             <Exomoons />
         </div>
     );
