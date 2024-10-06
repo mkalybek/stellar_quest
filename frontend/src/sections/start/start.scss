@@ -1,12 +1,19 @@
 #start {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 70%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url("./../../assets/exoplanets/StartBack.png");
+  background-size: cover;
 }
 
 .start-title {
-    font-size: 172px;
-    text-align: center;
-    transform: translateX(60%);
+  font-size: 172px;
+  text-align: center;
+  transform: translateX(60%);
 }
