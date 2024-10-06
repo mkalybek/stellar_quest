@@ -12,22 +12,22 @@ const Types = () => {
       <div className="main-description">
         <div className="title main-description-title">TYPES</div>
         <div className="text main-description-text">
-          Ещё Джордан Бруно считал, что вокруг других звёзд должны существовать
-          планеты. И вот спустя сотни лет экзопланеты начали открывать. В чём же
-          такое значительное открытие открытие? Открывая экзопланеты, ученые
-          увидели устройство планет, которому физически невозможно образоваться
-          в нашей солнечной системе.
+          Giordano Bruno believed that planets should exist around other stars.
+          And so, hundreds of years later, exoplanets began to be discovered.
+          What is such a significant discovery? By discovering exoplanets,
+          scientists have seen the structure of planets, which is physically
+          impossible to form in our solar system.
           <br />
           <br />
           <br />
           <br />
           <br />
-          Что мы измеряем, изучая экзопланеты и на основе чего их
-          классифицируем? Как мы можем узнать состав планеты? обычно у нас есть
-          всего две величины - Это масса и радиус планеты. Значит мы можем
-          определить среднюю плотность. Но дальше ситуация упрощается тем, что
-          мы примерно знаем, из чего планеты могут состоять, так как мы примерно
-          знаем состав вещества в галактике.
+          What do we measure by studying exoplanets and how do we classify them?
+          How can we find out the composition of the planet? usually we have
+          only two values - the mass and radius of the planet. So we can
+          determine the average density. But then the situation is simplified by
+          the fact that we roughly know what planets can consist of, since we
+          roughly know the composition of matter in the galaxy.
         </div>
       </div>
       <div className="main-types">
@@ -40,11 +40,11 @@ const Types = () => {
             alt="Earth type exoplanet"
             className="main-type-image"
           />
-          <div className="main-type-title">ЗЕМНОГО ТИПА</div>
+          <div className="main-type-title">EARTH TYPE PLANET</div>
           <div className="text main-type-description">
-            масса меньше 7 масс Земли. Состоят в основном из силикатов (скальная
-            компонента) и железа. Средняя плотность 3.5-6 г/куб.см. Радиус
-            меньше 2 радиусов Земли.
+            The mass is less than 7 Earth masses. They consist mainly of
+            silicates and iron. The average density is 3.5-6 g/cubic cm. The
+            radius is less than 2 radii of the Earth.
           </div>
         </div>
         <div className="main-type">
@@ -53,46 +53,47 @@ const Types = () => {
             alt="Giant type exoplanet"
             className="main-type-image"
           />
-          <div className="main-type-title">ГИГАНТЫ</div>
+          <div className="main-type-title">GIANT PLANETS</div>
           <div className="text main-type-description">
-            масса в интервале от 0.19 до 60 масс Юпитера. состоят в основном из
-            водорода и гелия. Быстро вращаются. Из-за колоссального давления в
-            недрах планеты водород переходит в металлическую фазу. имеют сильное
-            магнитное поле, усиливающееся с ростом массы планеты.
+            The mass is in the range from 0.19 to 60 Jupiter masses. They
+            consist mainly of hydrogen and helium. They rotate quickly. Due to
+            the enormous pressure in the bowels of the planet, hydrogen passes
+            into the metallic phase. They have a strong magnetic field, which
+            increases with the increase in the mass of the planet.
           </div>
         </div>
       </div>
       <div className="main-classes">
         <Simulator
-          title="ЗЕМНОГО ТИПА"
+          title="EARTH TYPE PLANETS"
           image={Earth}
           list={[
-            "суперземля",
-            "мегаземля",
-            "миниземля",
-            "планета-океан",
-            "железная планета",
-            "углеродная планета",
-            "планета, покрытая лавой",
+            "Super Earth",
+            "Mega Earth",
+            "Mini Earth",
+            "Ocean planet",
+            "The iron planet",
+            "Carbon planet",
+            "Lava planet",
           ]}
           altWord="Earth type exoplanet"
         />
         <Simulator
-          title="ГАЗОВЫЕ ГИГАНТЫ"
+          title="GAS GIANT PLANETS"
           image={GasG}
           list={[
-            "холодный юпитер",
-            "горячий юпитер",
-            "горячий сатурн",
-            "горячий нептун",
-            "водный гигант",
+            "Cold Jupiter",
+            "Hot Jupiter",
+            "Hot Saturn",
+            "Hot Neptune",
+            "Water giant",
           ]}
           altWord={"Gas Giant type exoplanet"}
         ></Simulator>
       </div>
       <div className="main-classes">
         <Simulator
-          title="ЛЕДЯНЫЕ ГИГАНТЫ ИЛИ ХОЛОДНЫЕ НЕПТУНЫ"
+          title="ICE giants or cold NEPTUNES"
           image={ColdP}
           list={[]}
           altWord={"Ice giants / cold Neptunes"}

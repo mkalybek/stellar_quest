@@ -5,48 +5,46 @@ const History = () => {
     <section id="history">
       <div className="title history-title">HISTORY</div>
       <label className="text">
-        Как только люди стали догадываться, что звёзды — это далёкие Солнца,
-        появилась естественная идея, раз вокруг Солнца крутятся планеты, значит,
-        должны существовать планеты и вокруг других звёзд. <br />
-        Сейчас именно такие планеты мы называем экзопланеты, внесолнечные
-        планеты.
+        As soon as people began to guess that the stars were distant Suns, a
+        natural idea appeared, since planets revolve around the Sun, it means
+        that planets must exist around other stars. Now these are the planets we
+        call exoplanets
       </label>
       <div className="text year-1990">
         <div className="year">1992</div>
         <div className="year-description">
-          Александр Вольжан американский астроном обнаружил экзопланету вокруг
-          нейтронной звезды, пульсара psr1257+12. Планеты вокруг нейтронных
-          звезд, скорее всего, образовались после взрыва сверхновой, поскольку
-          вряд ли планетная система могла пережить такой катаклизм. Но зато во
-          время взрыва выбрасывается достаточно много вещества, и из этого
-          вещества можно образовывать новое поколение планет, в том числе и
-          маленьких планет типа Земли. Именно такие планеты в основном и
-          открывают у пульсаров.
+          Alexander Volzhan, an American astronomer, discovered an exoplanet
+          around a neutron star, pulsar psr1257+12. Planets around neutron stars
+          most likely formed after a supernova explosion. During the explosion,
+          a lot of matter is ejected, and from this substance it is possible to
+          form a new generation of planets, including small planets like Earth.
+          These are the planets that are mostly discovered by pulsars.
         </div>
       </div>
       <div className="text year-1990">
         <div className="year">1995</div>
         <div className="year-description">
-          первая экзопланета 51 Pegasi b вокруг звезды 51 в чем-то подобной
-          Солнцу в созвездии Пегаса. Это была планета, подобия которой нет в
-          Солнечной системе. Это объект, который относится к классу так
-          называемых горячих Юпитеров (газовый гигант, который находится очень
-          близко от звезды). <br />
-          Это удивительно, не только потому, что этого нет в Солнечной системе,
-          а потому что никто этого не ожидал. Создать тяжелую газовую планету
-          близко от звезды просто невозможно. Когда планеты формируются из диска
-          вокруг звезды, то вблизи звезды, во-первых, массы просто мало, а
-          во-вторых, эта масса находится не в газовом состоянии. Свет звезды,
-          поток частиц выметают газ из областей близких к Солнцу.
+          The first exoplanet 51 Pegasi b orbits the star 51 in something
+          similar to the Sun in the constellation Pegasus. It was a planet whose
+          likeness does not exist in the Solar System. This is an object that
+          belongs to the class of so-called hot Jupiters (a gas giant that is
+          very close to the star). <br />
+          This is amazing, not only because it doesn't exist in the Solar
+          System, but because no one expected it. It is simply impossible to
+          create a heavy gas planet close to a star. When planets form from a
+          disk around a star, then near the star, firstly, there is simply
+          little mass, and secondly, this mass is not in a gaseous state.
+          Starlight and a stream of particles sweep gas out of areas close to
+          the Sun.
         </div>
       </div>
       <div className="text extra-text">
-        Первые экзопланеты были обнаружены благодаря наземным наблюдениям. Затем
-        стали запускать орбитальные телескопы, которые помогали открывать новые
-        миры. Но настоящим прорывом в этой области стал запуск аппарата
-        «Кеплер». За более чем 9 лет, с 2009-го, этот телескоп открыл более 2000
-        экзопланет и ещё столько же, даже больше, кандидатов, которые ждут
-        подтверждения.
+        The first exoplanets were discovered thanks to ground-based
+        observations. Then they began to launch orbital telescopes, which helped
+        to discover new worlds. But the real breakthrough in this area was the
+        launch of the Kepler spacecraft. For more than 9 years, since 2009, this
+        telescope has discovered more than 2,000 exoplanets and as many more,
+        even more, candidates who are waiting for confirmation.
       </div>
     </section>
   );

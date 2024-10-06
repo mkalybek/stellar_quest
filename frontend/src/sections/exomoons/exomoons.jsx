@@ -8,19 +8,20 @@ const Exomoons = () => {
       <div className="first-description">
         <div className="title exomoons-title">EXOMOONS</div>
         <div className="text exomoons-text">
-          Конечно ученые хотели бы открывать и спутники экзопланет. Спутники
-          меньше планет и поэтому технически обнаружить спутник достаточно
-          сложно <br />
-          <br />
-          Как их можно открыть? В принципе, способы открытия спутников похожи на
-          способы открытия планет. Практически все способы, которые
-          задействованы для планет, можно распространить и на спутники
+          Of course, scientists would like to discover the satellites of
+          exoplanets. Satellites are smaller than planets and therefore
+          technically it is quite difficult to detect a satellite
           <br />
           <br />
+          How can they be opened? Basically, the ways of discovering satellites
+          are similar to the ways of discovering planets. Almost all the methods
+          that are used for planets can be extended to satellites
           <br />
-          Одним из самых интересных вопросов в этой сфере на данный момент
-          является потенциальная обитаемость спутников. Есть ли жизнь на этих
-          планетах? Ключевую роль в этом вопросе играет Зона Златовласки
+          <br />
+          <br />
+          One of the most interesting questions in this area at the moment is
+          the potential habitability of satellites. Is there life on these
+          planets? The Goldilocks Zone plays a key role in this issue
         </div>
       </div>
 
@@ -28,10 +29,10 @@ const Exomoons = () => {
         <div className="goldilocks-description">
           <div className="title">GOLDILOCKS ZONE OR HABITABLE ZONE</div>
           <div className="text goldilocks-description-text">
-            зона Златовласки это такой особый регион вокруг звезды, где средняя
-            температура экзопланеты позволяет существовать жидкой воде. Это
-            зависит от расстояния до звезды, количества вырабатываемой энергии и
-            атмосферы экзопланеты.{" "}
+            The Goldilocks zone is such a special region around a star where the
+            average temperature of an exoplanet allows liquid water to exist. It
+            depends on the distance to the star, the amount of energy produced
+            and the atmosphere of the exoplanet.
           </div>
         </div>
         <div className="goldilocks-image">
@@ -48,9 +49,9 @@ const Exomoons = () => {
             />
           </div>
           <div className="text goldilocks-image-text">
-            Например Венера и Марс находятся в потенциально обитаемой зоне
-            Солнечной системы. Если улучшить атмосферы этих планет, на них
-            вполне можно будет жить.
+            For example, Venus and Mars are located in the potentially habitable
+            zone of the Solar System. If the atmospheres of these planets are
+            improved, it will be quite possible to live on them.
           </div>
         </div>
       </div>
@@ -58,32 +59,32 @@ const Exomoons = () => {
         <div className="example">
           <img src={Exo1} alt="" className="goldilocks-image-actual" />
           <div className="text">
-            TOI-700 d — первая обнаруженная экзопланета земной группы,
-            находящаяся в обитаемой зоне своей звезды. Открыта транзитным
-            методом телескопом TESS.
+            TOI-700 d is the first discovered exoplanet of the Earth group,
+            located in the habitable zone of its star. The TESS telescope was
+            discovered by the transit method.
           </div>
         </div>
         <div className="example">
           <img src={Exo2} alt="" className="goldilocks-image-actual" />
           <div className="text">
-            22 февраля 2017 года NASA заявило, что обнаружило сразу семь
-            экзопланет около ультрахолодного звезды-карлика TRAPPIST-1, три из
-            которых имеют размеры, сравнимые с Землёй, и находятся в «обитаемой
-            зоне» с возможностью наличия жидкой воды.
+            On February 22, 2017, NASA announced that it had discovered seven
+            exoplanets near the ultra-cold dwarf star TRAPPIST-1, three of which
+            are Earth-sized and located in the "habitable zone" with the
+            possibility of liquid water.
           </div>
         </div>
       </div>
       <div className="text ending">
-        После уточнения космическим телескопом Gaia данных о расстоянии до 130
-        млн звёзд и их светимости, из 30 землеподобных и потенциально обитаемых
-        экзопланет, найденных телескопом Kepler, статус земплеподобных миров,
-        находящихся в зоне обитаемости, в 2018 году сохранили 12 планет (по
-        оптимистичным оценкам) или 2 планеты (по самым пессимистичным оценкам)
+        After the Gaia space Telescope clarified data on the distance of up to
+        130 million stars and their luminosity, out of 30 Earth-like and
+        potentially habitable exoplanets found by the Kepler telescope, 12
+        planets or 2 planets retained the status of Earth-like worlds in the
+        habitable zone in 2018.
       </div>
       <div className="text ending end">
-        Это совершенно ключевой шаг, поскольку в ближайшие годы, наверное,
-        единственный способ продвинуться в понимании того, есть ли жизнь на
-        других планетах.
+        This is an absolutely key step, because in the coming years it is
+        probably the only way to move forward in understanding whether there is
+        life on other planets.
       </div>
     </section>
   );
