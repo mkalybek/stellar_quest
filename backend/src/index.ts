@@ -1,4 +1,5 @@
 import path from "path";
+import cors from "cors";
 import express, { Request, Response } from "express";
 import { OpenAI } from "openai";
 import crypto from "crypto";
@@ -10,6 +11,7 @@ import { OPEN_AI_MODEL, sessions } from "./utils/constants";
 // Initialize Express
 const app = express();
 app.use(express.json());
+app.use(cors());
 
 app.use("/planets", express.static(path.join(__dirname, "../", "/planets")));
 
