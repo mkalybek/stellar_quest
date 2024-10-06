@@ -4,7 +4,8 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import MainPage from './pages/mainPage';
-import SimulatorPage from './pages/simulatorPage';
+import SimulatorGasGiantPage from './pages/simulatorGasGiantPage';
+import SimulatorEarthTypePage from './pages/simulatorEarthTypePage';
 
 const router = createBrowserRouter([
   {
@@ -13,9 +14,13 @@ const router = createBrowserRouter([
     errorElement: <div>404 Not Found</div>,
   },
   {
-    path: '/simulator/:planetType',
-    element: <SimulatorPage />,
-  }
+    path: '/simulator/gasgiant',
+    element: <SimulatorGasGiantPage />,
+  },
+  {
+    path: '/simulator/earthtype',
+    element: <SimulatorEarthTypePage />,
+  },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
