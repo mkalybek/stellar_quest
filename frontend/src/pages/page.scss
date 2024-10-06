@@ -5,6 +5,21 @@
   color: white;
   position: relative;
   overflow-x: hidden;
+
+  .exoplanetpage_title {
+    margin-top: 120px;
+    position: absolute;
+    top: 50%;            /* Move it down to the center */
+    left: 50%;           /* Move it right to the center */
+    transform: translate(-50%, -50%); /* Adjust for the width and height of the heading */
+    text-align: center;  /* Center the text */
+    z-index: 10;
+  }
+
+  .frame {
+    z-index: -1;
+    border: 0;
+  }
 }
 
 .title {
