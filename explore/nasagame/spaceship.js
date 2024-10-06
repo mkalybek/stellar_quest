@@ -3,7 +3,7 @@ export class Spaceship {
         this.canvas = canvas;
         this.size = 20;
         this.maxSpeed = 25; // Maximum speed of the spaceship
-        this.acceleration = 0.0008; // Acceleration value
+        this.acceleration = 0.001; // Acceleration value
         this.friction = 0.99; // Friction value to gradually slow down
         this.angle = 0; // Current angle of the spaceship (for rotation)
         this.rotationSpeed = 1; // How fast the spaceship can rotate

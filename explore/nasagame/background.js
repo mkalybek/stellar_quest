@@ -92,8 +92,19 @@ export class Background {
 
             const {x, y} = toCartesian(lonRad, latRad);
             const {x1, y1} = toCartesian(lonRad1, latRad1);
-            const size = planet.pl_rade * 30; // Set size based on planet radius
-            const texture = './textures/uranusliketexture.png';
+            const size = planet.pl_rade * 10; // Set size based on planet radius
+            var texture = '../nasagame/textures/plutoliketexture.png';
+            if (size > 30 && size <= 60) {
+                texture = '../nasagame/textures/marsliketexture.png';
+            } else if (size > 60 && size <= 90){
+                texture = '../nasagame/textures/uranusliketexture.png';
+            } else if (size > 90 && size <= 100){
+                texture = '../nasagame/textures/jupiterlikeplanet.png';
+            } else if (size > 100 && size <= 120){
+                texture = '../nasagame/textures/veneraliketexture.png';
+            } else if (size > 120){
+                texture = '../nasagame/textures/frozenliketexture.png';
+            }
             const newPlanet = new Planet(x, y, size, planet.name, texture);
             const oldPlanet = new Planet(x1, y1, size, prevplanet.name, texture);
             if (planetsOverlap(oldPlanet, newPlanet)){
@@ -123,10 +134,10 @@ export class Background {
         const canvasHeight = this.canvas.height;
 
         // Define the visible area for stars relative to the spaceship
-        const visibleAreaXStart = spaceshipX*0.01 - canvasWidth*5;
-        const visibleAreaXEnd = spaceshipX*0.01 + canvasWidth*5;
-        const visibleAreaYStart = spaceshipY*0.01 - canvasHeight*5;
-        const visibleAreaYEnd = spaceshipY*0.01 + canvasHeight*5;
+        const visibleAreaXStart = spaceshipX*0.01 - canvasWidth*7;
+        const visibleAreaXEnd = spaceshipX*0.01 + canvasWidth*7;
+        const visibleAreaYStart = spaceshipY*0.01 - canvasHeight*7;
+        const visibleAreaYEnd = spaceshipY*0.01 + canvasHeight*7;
 
         // Draw stars that are only within the current visible area
         ctx.fillStyle = 'white';

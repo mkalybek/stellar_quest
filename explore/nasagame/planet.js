@@ -1,5 +1,5 @@
 export class Planet {
-    constructor(x, y, size, name = "unnamed", texture = '../nasagame/textures/uranusliketexture.png') {
+    constructor(x, y, size, name = "unnamed", texture) {
         this.x = x; // X coordinate in space
         this.y = y; // Y coordinate in space
         this.size = size; // Size of the planet
@@ -40,8 +40,8 @@ export class Planet {
         // }
 
         // Optionally, draw the planet name if needed
-        ctx.fillStyle = 'white';
-        ctx.font = '14px Arial';
-        ctx.fillText(this.name, adjustedX, adjustedY - this.size / 2 - 5); // Draw name above the planet
+        // ctx.fillStyle = 'white';
+        // ctx.font = '14px Arial';
+        // ctx.fillText(this.name, adjustedX, adjustedY - this.size / 2 - 5); // Draw name above the planet
     }
 }
