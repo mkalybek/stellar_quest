@@ -8,7 +8,7 @@ const ExoplanetPage = () => {
         <div className='page'>
             <Header />
             <h2 className='title exoplanetpage_title'>{planetName}</h2>
-            <iframe className='frame' height="100%" width="100%" src={textureLink}></iframe>
+            <iframe className='frame' height="100%" width="100%" src={""}></iframe>
         </div>
     );
 };
