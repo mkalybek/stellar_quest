@@ -93,7 +93,7 @@ const Types = () => {
       </div>
       <div className="main-classes">
         <Simulator
-          title="ICE giants or cold NEPTUNES"
+          title="ICE GIANTS OR COLD NEPTUNES"
           image={ColdP}
           list={[]}
           altWord={"Ice giants / cold Neptunes"}
