@@ -121,9 +121,31 @@ app.post("/generate_planet", async (req, res) => {
     console.log(req.body);
     try {
         const resultBuffer = await runPy();
+        const {
+            choices: {
+                0: { message },
+            },
+        } = await openai.chat.completions.create({
+            model: OPEN_AI_MODEL,
+            messages: [
+                {
+                    role: "user",
+                    content: `Generate exoplanet name considering following conditions, just return the name:
+                    planetType: ${
+                        planetType === 1 ? "gas giant" : "earth planet"
+                    }
+                    mass: ${mass} jupiters
+                    temperature: ${temperature} Kelvins
+                    distance to star, au: ${distanceToStar}
+                    elements: ${JSON.stringify(elements)} in percents
+                `,
+                },
+            ],
+        });
         const resultJson = JSON.parse(resultBuffer.toString());
         res.json({
             ...resultJson,
+            planetName: message.content,
         });
     } catch (error) {
         console.error((error as Buffer).toString());
