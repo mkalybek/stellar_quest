@@ -55,9 +55,5 @@ def generate_helium_planet():
 
     # Combine the maps
     exoplanet_map = Image.alpha_composite(exoplanet_map.convert("RGBA"), clouds)
-
-    # Save the generated map
-    #exoplanet_map.save("gas_giant_map.png")
     return exoplanet_map
 
-#print("Gas giant planet map generated.")

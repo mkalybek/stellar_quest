@@ -71,5 +71,3 @@ def generate_neptune():
     # exoplanet_map.save("gas_giant_map.png")
 
     return exoplanet_map
-
-    print("Gas giant planet map generated.")

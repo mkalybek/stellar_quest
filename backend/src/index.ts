@@ -126,7 +126,7 @@ app.post("/generate_planet", async (req, res) => {
             ...resultJson,
         });
     } catch (error) {
-        console.error(error);
+        console.error((error as Buffer).toString());
         res.status(400).json({
             error: true,
         });

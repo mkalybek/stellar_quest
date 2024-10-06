@@ -574,11 +574,6 @@ def generate_rogue_planet():
         for y in range(height):
             exoplanet_map.putpixel((x, y), exoplanet_map.getpixel((width - x - 1, y)))
     '''
-    # Combine the maps
-    #exoplanet_map = Image.alpha_composite(exoplanet_map.convert("RGBA"), clouds)
-
-    # Save the generated map (optional)
-    # exoplanet_map.save("gas_giant_map.png")
 
     return exoplanet_map
 
@@ -638,11 +633,4 @@ def generate_iron_planet(temperature, proximity):
 
     # Combine the maps
     exoplanet_map = Image.alpha_composite(exoplanet_map.convert("RGBA"), clouds)
-
-    # Save the generated map
-    #exoplanet_map.save("gas_giant_map.png")
     return exoplanet_map
-
-
-
-#print("Gas giant planet map generated.")
