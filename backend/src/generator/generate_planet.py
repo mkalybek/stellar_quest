@@ -73,10 +73,12 @@ def generate_planet(type, mass, temperature, proximity, sostav):
                 "clouds_count": 0
             }
         else:
+            planet_type2 = planet_type
+            if planet_type == "neptune": planet_type2 = "hot neptune"
             path = "planets/" + planet_type + "/" + str(np.random.random_integers(1, 4)) + ".png"
             return {
                 "image_name": path,
-                "planet_type": planet_type,
+                "planet_type": planet_type2,
                 "clouds_count": 0 + int(planet_type == "water_planet")
             }
     else:
