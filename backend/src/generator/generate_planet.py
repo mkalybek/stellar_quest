@@ -83,7 +83,7 @@ def generate_planet(type, mass, temperature, proximity, sostav):
             }
     else:
         if planet_type == "carbon_planet" or planet_type == "io_planet" or planet_type == "lava_planet" or planet_type == "super_venus" or planet_type == "rogue_planet" or planet_type == "ocean_planet" or planet_type == "mega_earth" or planet_type == "super_earth" or planet_type == "mini_earth":
-            path = "planets/" + planet_type + "/" + np.random.random_integers(1, 4) + ".png"
+            path = "planets/" + planet_type + "/" + str(np.random.random_integers(1, 4)) + ".png"
             cloud_count = 0
             if planet_type == "ocean_planet":
                 if 200 <= temperature <= 500: cloud_count = 1
@@ -103,14 +103,14 @@ def generate_planet(type, mass, temperature, proximity, sostav):
                 map = mirror(map)
                 map.save("planets/iron_planet/1.png")
                 if 200 <= temperature < 1000:
-                    path = "planets/" + planet_type + "/" + np.random.random_integers(1, 2) + ".png"
+                    path = "planets/" + planet_type + "/" + str(np.random.random_integers(1, 2)) + ".png"
                     return {
                         "image_name": "planets/iron_planet/2.png",
                         "planet_type": planet_type, 
                         "cloud_count": 0
                     }
                 else:
-                    path = "planets/" + planet_type + "/" + np.random.random_integers(3, 4) + ".png"
+                    path = "planets/" + planet_type + "/" + str(np.random.random_integers(3, 4)) + ".png"
                     return {
                         "image_name": path,
                         "planet_type": planet_type, 
