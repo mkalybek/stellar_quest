@@ -1,3 +1,4 @@
+import path from "path";
 import express, { Request, Response } from "express";
 import { OpenAI } from "openai";
 import crypto from "crypto";
@@ -9,6 +10,8 @@ import { OPEN_AI_MODEL, sessions } from "./utils/constants";
 // Initialize Express
 const app = express();
 app.use(express.json());
+
+app.use("/planets", express.static(__dirname + "/planets"));
 
 const openai = new OpenAI({
     apiKey: env.openAiApiKey,
@@ -81,6 +84,49 @@ app.post("/dialog", async (req, res) => {
         console.error(error);
         res.json({
             error: String(error),
+        });
+    }
+});
+
+app.post("/generate_planet", async (req, res) => {
+    const { planetType, mass, temperature, distanceToStar, elements } =
+        req.body;
+
+    let runPy = () =>
+        new Promise<Buffer>(function (success, nosuccess) {
+            const { spawn } = require("child_process");
+            const pyprog = spawn("python3.8", [
+                path.join(__dirname, "./generate-planet-cli.py"),
+                "--planetType",
+                planetType,
+                "--mass",
+                mass,
+                "--temperature",
+                temperature,
+                "--distanceToStar",
+                distanceToStar,
+                "--elements",
+                JSON.stringify(elements),
+            ]);
+
+            pyprog.stdout.on("data", function (data: Buffer) {
+                success(data);
+            });
+
+            pyprog.stderr.on("data", (data: Buffer) => {
+                nosuccess(data);
+            });
+        });
+
+    console.log(req.body);
+    try {
+        const resultBuffer = await runPy();
+        const json = JSON.parse(resultBuffer.toString());
+        res.json(json);
+    } catch (error) {
+        console.error(error);
+        res.status(400).json({
+            error: true,
         });
     }
 });
