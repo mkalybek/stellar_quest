@@ -11,7 +11,7 @@ import { OPEN_AI_MODEL, sessions } from "./utils/constants";
 const app = express();
 app.use(express.json());
 
-app.use("/planets", express.static(__dirname + "/planets"));
+app.use("/planets", express.static(path.join(__dirname, "../", "/planets")));
 
 const openai = new OpenAI({
     apiKey: env.openAiApiKey,
@@ -121,8 +121,10 @@ app.post("/generate_planet", async (req, res) => {
     console.log(req.body);
     try {
         const resultBuffer = await runPy();
-        const json = JSON.parse(resultBuffer.toString());
-        res.json(json);
+        const resultJson = JSON.parse(resultBuffer.toString());
+        res.json({
+            ...resultJson,
+        });
     } catch (error) {
         console.error(error);
         res.status(400).json({
