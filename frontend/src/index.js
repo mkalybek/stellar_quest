@@ -6,6 +6,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import MainPage from './pages/mainPage';
 import SimulatorGasGiantPage from './pages/simulatorGasGiantPage';
 import SimulatorEarthTypePage from './pages/simulatorEarthTypePage';
+import ExoplanetPage from './pages/exoplanetPage';
+import GeneratePage from './pages/generatePage';
 
 const router = createBrowserRouter([
   {
@@ -20,6 +22,14 @@ const router = createBrowserRouter([
   {
     path: '/simulator/earthtype',
     element: <SimulatorEarthTypePage />,
+  },
+  {
+    path: '/exoplanet/:planetName/:textureLink',
+    element: <ExoplanetPage />,
+  },
+  {
+    path: '/generate/:planetName/:planetType',
+    element: <GeneratePage />,
   },
 ]);
 

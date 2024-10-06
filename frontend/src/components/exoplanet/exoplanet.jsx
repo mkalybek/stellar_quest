@@ -1,14 +1,16 @@
 import './exoplanet.scss';
 import ChatBox from '../chat/chatBox';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
-const Exoplanet = ({ name, desc, image }) => {
+const Exoplanet = ({ name, desc, image, textureLink }) => {
     const [isChatOpen, setIsChatOpen] = useState(false);
 
     const toggleChat = () => {
         setIsChatOpen(!isChatOpen);
-        console.log(isChatOpen);
     };
+
+    let closerLink = `/exoplanet/${encodeURIComponent(name)}/${encodeURIComponent(textureLink)}`;
     return (
         <div className="wrap">
             {isChatOpen && <ChatBox planet={name} onClose={toggleChat} />}
@@ -16,9 +18,9 @@ const Exoplanet = ({ name, desc, image }) => {
                 <div className="circle_container">
                     <img src={image} alt={name} className="img" />
                 </div>
-                <a href="/#" class="link_closer">
+                <Link to={closerLink} class="link_closer">
                     Take a closer look
-                </a>
+                </Link>
             </div>
             <div className="info">
                 <h2 className="title">{name}</h2>
