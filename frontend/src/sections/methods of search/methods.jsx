@@ -39,19 +39,19 @@ const Methods = () => {
       <div className="title methods-list">
         <ul>
           <li>
-            <a href="/#dopler">DOPLER'S EFFECT</a>
+            <a href="/stellar-quest/#dopler">DOPLER'S EFFECT</a>
           </li>
           <li>
-            <a href="/#transit">TRANSIT</a>
+            <a href="/stellar-quest/#transit">TRANSIT</a>
           </li>
           <li>
-            <a href="/#microlensing">GRAVITATIONAL MICROLENSING</a>
+            <a href="/stellar-quest/#microlensing">GRAVITATIONAL MICROLENSING</a>
           </li>
           <li>
-            <a href="/#direct-imaging">DIRECT IMAGING</a>
+            <a href="/stellar-quest/#direct-imaging">DIRECT IMAGING</a>
           </li>
           <li>
-            <a href="/#minuscule">MINUSCULE MOVEMENTS</a>
+            <a href="/stellar-quest/#minuscule">MINUSCULE MOVEMENTS</a>
           </li>
         </ul>
       </div>
