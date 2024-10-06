@@ -21,6 +21,7 @@ import fragmentShader from "./shaders/fragment.glsl";
 
 global.THREE = THREE;
 THREE.ColorManagement.enabled = true;
+THREE.ImageUtils.crossOrigin = null;
 
 const params = {
     sunIntensity: 1.3,
@@ -39,6 +40,7 @@ export async function initPlanetScene(config = {}) {
         planetTexture: DefaultMap,
     };
     config = { ...defaultConfig, ...config };
+    console.log(config);
 
     let renderer = createRenderer({ antialias: true }, (_renderer) => {
         _renderer.outputColorSpace = THREE.SRGBColorSpace;
@@ -229,4 +231,18 @@ export async function initPlanetScene(config = {}) {
 
     runApp(app, scene, renderer, camera, true, undefined, undefined);
 }
-initPlanetScene();
+
+window.onload = () => {
+    const params = new URLSearchParams(window.location.search);
+
+    const obj = {
+        hasClouds: Boolean(Number(params.get("cloudsCount"))),
+    };
+
+    const planetTexture = params.get("planetTexture");
+    if (planetTexture) {
+        obj.planetTexture = planetTexture;
+    }
+
+    initPlanetScene(obj);
+};
