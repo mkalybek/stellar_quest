@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import Header from '../components/header/header';
 import './page.scss';
 import { useState } from "react";
@@ -10,6 +11,7 @@ const logScale = (min, max, value) => {
 };
 
 const SimulatorGasGiantPage = () => {
+    const navigate = useNavigate();
     const [mass, setMass] = useState(0.02);               // Jupiter masses
     const [temperature, setTemperature] = useState(500);  // Kelvin
     const [distance, setDistance] = useState(0.05);        // AU
@@ -29,9 +31,47 @@ const SimulatorGasGiantPage = () => {
         setDistance(Math.round(newDistance * 100) / 100);  // Rounding to 2 decimal places
     };
 
-    const handleGenerate = () => {
-        alert(`Generating a planet with Mass: ${mass} Jupiter masses and Distance: ${distance} AU`);
+    const handleGenerate = async (e) => {
+        e.preventDefault(); // Prevent default form submission behavior
+
+        // Construct the request body
+        const requestBody = {
+            planetType: 1, // Assuming planetType is 1 for default gas giants
+            mass: mass,  // Using the state value for mass
+            temperature: parseInt(temperature, 10),  // Convert temperature to integer
+            distanceToStar: distance,  // Using the state value for distance
+            elements: {
+                Helium: parseInt(helium, 10),
+                Water: parseInt(water, 10),
+                Carbon: 0,          // Default value
+                Ice: 0,             // Default value
+                Sulfur: 0,          // Default value
+                "carbon dioxide": 0, // Default value
+                Iron: 0             // Default value
+            }
+        };
+        console.log(JSON.stringify(requestBody))
+
+        try {
+            // Send the POST request
+            const response = await fetch('https://mobile.codeunion.kz/stellar-quest/api/generate_planet', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(requestBody),  // Convert the body to a JSON string
+            });
+
+            const data = await response.json();  // Parse the JSON response
+            console.log('Generated planet:', data);  // Log the generated planet details
+            let linkGenerate = `/generate/${encodeURIComponent(data.planetName)}/${encodeURIComponent(data.planet_type)}/${encodeURIComponent(data.image_name)}/${encodeURIComponent(data.clouds_count)}`;
+            navigate(linkGenerate);
+
+        } catch (error) {
+            console.error('Error generating planet:', error);
+        }
     };
+
 
     let planetType = "Gas Giant Planet";
 

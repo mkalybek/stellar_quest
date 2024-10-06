@@ -9,17 +9,49 @@
   .exoplanetpage_title {
     margin-top: 120px;
     position: absolute;
-    top: 50%;            /* Move it down to the center */
-    left: 50%;           /* Move it right to the center */
+    top: 25%;            /* Move it down to the center */
+    left: 20%;           /* Move it right to the center */
     transform: translate(-50%, -50%); /* Adjust for the width and height of the heading */
     text-align: center;  /* Center the text */
     z-index: 10;
   }
+}
 
-  .frame {
-    z-index: -1;
-    border: 0;
-  }
+.page_generate {
+    position: relative;
+    width: 100vw;        // Full width of viewport
+    height: 100vh;       // Full height of viewport
+    overflow: hidden;    // Hide any overflow outside of viewport
+    .titles {
+        margin-top: 120px;
+        position: absolute;
+        top: 20%;            /* Move it down to the center */
+        left: 20%;           /* Move it right to the center */
+        z-index: 10;
+        transform: translate(-50%, -50%); /* Adjust for the width and height of the heading */
+
+        .generatepage_title {
+            font-size: 2rem;
+            span {
+                color:#4d9de0;
+            }
+        }
+    }
+    
+    .frame_container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;       // Full viewport height
+        overflow: hidden;    // Ensure no overflow is shown
+        .frame {
+            width: 100%;        // Full width of the viewport
+            height: 100%;       // Full height of the viewport
+            border: 0;           // No border around the iframe
+            z-index: 1;
+        }
+      }
 }
 
 .title {
@@ -56,6 +88,12 @@ a {
         margin: 20px auto;
         box-shadow: 0 0 15px rgba(77, 157, 224, 0.4); /* Subtle glow effect */
         transition: all 0.3s ease-in-out;
+
+        .percentage-fields {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Two equal columns */
+            gap: 20px; /* Space between columns */
+        }
     
         .form-group {
             margin-bottom: 20px;

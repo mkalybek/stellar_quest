@@ -3,13 +3,19 @@ import './page.scss';
 import Header from '../components/header/header';
 
 const GeneratePage = () => {
-    const { planetName, planetType } = useParams();
+    const { planetName, planetType, imageName, cloudsCount } = useParams();
+    let planetTexture = 'https://mobile.codeunion.kz/stellar-quest/api/' + imageName;
+    const frameLink = `https://mobile.codeunion.kz/stellar-quest/iframe/?planetTexture=${planetTexture}&cloudsCount=${cloudsCount}`;
     return (
-        <div className='page'>
+        <div className='page page_generate'>
             <Header />
-            <h2 className='title generatepage_title'>Your planet name: {planetName}</h2>
-            <h2 className='title generatepage_title'>Your type of planet: {planetType}</h2>
-            <iframe className='frame' height="100%" width="100%" src={""}></iframe>
+            <div className="titles">
+                <h2 className='title generatepage_title'>Your planet name: <span>{planetName}</span></h2>
+                <h2 className='title generatepage_title'>Your type of planet: <span>{planetType}</span></h2>
+            </div>
+            <div className='frame_container'>
+                <iframe className='frame' title={planetName} src={frameLink}></iframe>
+            </div>
         </div>
     );
 };

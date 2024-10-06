@@ -24,11 +24,11 @@ const router = createBrowserRouter([
     element: <SimulatorEarthTypePage />,
   },
   {
-    path: '/exoplanet/:planetName/:textureLink',
+    path: '/exoplanet/:planetName/:textureImage',
     element: <ExoplanetPage />,
   },
   {
-    path: '/generate/:planetName/:planetType',
+    path: '/generate/:planetName/:planetType/:imageName/:cloudsCount',
     element: <GeneratePage />,
   },
 ]);

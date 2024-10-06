@@ -3,12 +3,16 @@ import './page.scss';
 import Header from '../components/header/header';
 
 const ExoplanetPage = () => {
-    const { planetName, textureLink } = useParams();
+    const { planetName, textureImage } = useParams();
+    let textureLink = `https://mobile.codeunion.kz/stellar-quest/api/planets/static/${textureImage}`;
+    let frameLink = `https://mobile.codeunion.kz/stellar-quest/iframe/?planetTexture=${textureLink}&cloudsCount=1`;
     return (
-        <div className='page'>
+        <div className='page page_generate'>
             <Header />
             <h2 className='title exoplanetpage_title'>{planetName}</h2>
-            <iframe className='frame' height="100%" width="100%" src={""}></iframe>
+            <div className='frame_container'>
+                <iframe className='frame' title={planetName} src={frameLink}></iframe>
+            </div>
         </div>
     );
 };
